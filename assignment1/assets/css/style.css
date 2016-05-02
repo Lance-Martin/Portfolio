@@ -230,6 +230,11 @@ input[type=submit] {
 		max-width: 730px;
 			}
 
+		.work {
+			width: 360px;
+			height: 270px;
+		}
+
 	}
 
 @media screen and (max-width:768px) {
@@ -249,6 +254,11 @@ input[type=submit] {
 		.sidebar {
 			max-width: 730px;
 			width:100%
+		}
+
+		.work {
+			width: 310px;
+			height: 240px;
 		}
 
 }
@@ -293,4 +303,10 @@ input[type=submit] {
 			width:100%;
 			text-align: center;
 		}
+
+		.work {
+			width: 540px;
+			height: 400px;
+		}
+
 }
