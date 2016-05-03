@@ -219,7 +219,6 @@ input[type=submit] {
 @media screen and (max-width: 980px) {
 
 	.main-section{
-		background: #fff;
 		padding: 30px;
 		width: 100%;
 		max-width: 420px;
@@ -290,6 +289,7 @@ input[type=submit] {
 
 		nav {
 			width:100%;
+			margin: 15px auto;
 		}
 
 		nav a {
@@ -297,6 +297,7 @@ input[type=submit] {
 			display: inline-block;
 			margin: auto;
 			padding:auto;
+			text-align: center;
 		}
 
 		#logo {
@@ -307,6 +308,11 @@ input[type=submit] {
 		.work {
 			width: 540px;
 			height: 400px;
+		}
+
+		#masthead {
+			position: static;
+			margin-bottom: -110px;
 		}
 
 }
