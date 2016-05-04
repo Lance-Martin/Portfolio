@@ -308,6 +308,7 @@ input[type=submit] {
 		.work {
 			width: 540px;
 			height: 400px;
+			overflow: hidden;
 		}
 
 		#masthead {
