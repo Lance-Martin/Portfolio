@@ -230,17 +230,17 @@
       							<h5>Eatinerary</h5>
       							<img src="img/works/eatinerary.png" class="img-responsive" alt="img" style="height:200px;">
       						</div>
-                  <div class="col-md-3 animated fadeInUp slower myWork" id = "burger">
+                  <div class="col-md-3 animated fadeInUp slower myWork" id = "news">
+      							<h5>News Glimpse</h5>
+      							<img src="img/works/newsGlimpse.png" class="img-responsive" alt="img" style="height:200px;">
+      						</div>
+                  <div class="col-md-3 animated fadeInUp slow myWork" id = "burger">
       							<h5>Eat-Da-Burger</h5>
       							<img src="img/works/burger.png" class="img-responsive" alt="img" style="height:200px;">
       						</div>
-                  <div class="col-md-3 animated fadeInUp slow myWork" id = "coders">
+                  <div class="col-md-3 animated fadeInUp  myWork" id = "coders">
       							<h5>Coders Connect</h5>
       							<img src="img/works/coders.png" class="img-responsive" alt="img" style="height:200px;">
-      						</div>
-                  <div class="col-md-3 animated fadeInUp myWork" id = "bamazon">
-      							<h5>Command Line Store</h5>
-      							<img src="img/works/bamazon.png" class="img-responsive" alt="img" style="height:200px;">
       						</div>
       						<!-- <div class="col-md-3 animated fadeInUp slower myWork" id = "weekend">
       							<h5>Use weekend decider to find something to do</h5>
@@ -248,19 +248,26 @@
       						</div> -->
 					      </div>
                 <div class="row gallery-item" style = "margin-top: 20px;">
+                  <div class="col-md-3 animated fadeInUp myWork" id = "bamazon">
+      							<h5>Command Line Store</h5><br>
+      							<img src="img/works/bamazon.png" class="img-responsive" alt="img" style="height:200px;">
+      						</div>
                   <div class="col-md-3 animated fadeInUp slow myWork" id = "liri">
       							<h5>LIRI</h5><br>
       							<img src="img/works/liri.png" class="img-responsive" alt="img" style="height:200px;">
       						</div>
-                  <div class="col-md-3 animated fadeInUp myWork" id = "train">
+                  <div class="col-md-3 animated fadeInUp slower myWork" id = "train">
       							<h5>Train schedule utilizing firebase</h5>
       							<img src="img/works/train.png" class="img-responsive" alt="img" style="height: 200px;">
       						</div>
-                  <div class="col-md-3 animated fadeInUp myWork" id = "hangman">
+                  <div class="col-md-3 animated fadeInUp slower myWork" id = "hangman">
                     <h5>A javascript driven hangman game</h5>
 								    <img src="img/works/piratesHang.png" class="img-responsive" alt="img" style="height:200px;">
 						      </div>
-      						<div class="col-md-3 animated fadeInUp slow myWork" id = "avengers">
+
+                </div>
+                <div class="row gallery-item" style = "margin-top: 20px;">
+                  <div class="col-md-3 animated fadeInUp slower myWork" id = "avengers">
       							<h5>jQuery powered avengers themed RPG</h5>
       							<img src="img/works/avengersGame.png" class="img-responsive" alt="img" style="height:200px;">
       						</div>
@@ -399,6 +406,26 @@
       <p>Eatinerary was a group project I built alongside David Quinlan and Herbert Gutierrez. We built Eatinerary with an objective of providing one place in which a person can search restaurants across the nation, see their ratings and contact information, and add restaurants onto their own unique to-do-list with an option to receive an email reminder on the date they set. In the construction of Eatinerary I was primarily responsible for the routing, AJAX calls, and setting up a mailing service on our server.</p>
       <p><b>Technologies used: Javascript, Node.js, Express, mySQL, Sequelize, Node Mailer, jQuery, AJAX, APIs, Materialize, HTML, and CSS.</b></p>
       <p><b>You can demo Eatinerary <a href = "http://morning-mountain-86680.herokuapp.com/login" target="_blank">here</a></b></p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal" style = "background-color: #3dc9b3;">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" id = "newsModal" aria-labelledby="myLargeModalLabel" style = "margin-top: 200px;">
+<div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title">News Glimpse</h4>
+    </div>
+    <div class="modal-body" style = "overflow: auto;">
+      <img src = "img/works/newsGlimpse.png" class="img-responsive" alt="img" style="width:250px; height:200px; float: right; margin-left: 5px; margin-bottom: 5px;">
+      <p>News Glimpse is a webscraper news app that fetches the latest headline article from BBC News, stores it in a mongoDB, and allows users to comment on the stories. </p>
+      <p><b>Technologies used: Javascript, Node.js, Express, mongoDB, mongoose, handlebars, jQuery, AJAX, Materialize, HTML, and CSS.</b></p>
+      <p><b>You can demo News Glimpse <a href = "http://sheltered-ridge-10689.herokuapp.com/" target="_blank">here</a></b></p>
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-default" data-dismiss="modal" style = "background-color: #3dc9b3;">Close</button>
@@ -548,7 +575,9 @@
   $('#liri').on('click', function(){
     $('#liriModal').modal('show');
   });
-
+  $('#news').on('click',function(){
+    $('#newsModal').modal('show');
+  });
 
   </script>
 </body>
